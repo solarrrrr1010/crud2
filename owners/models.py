@@ -8,6 +8,7 @@ class Owner(models.Model):
     name = models.CharField(max_length=45)
     email = models.CharField(max_length=300)
     age = models.IntegerField()
+    #dog = models.ForeignKey('Dog', on_delete=models.CASCADE)
 
     class Meta:
         db_table = 'owners'
